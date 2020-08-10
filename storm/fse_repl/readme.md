@@ -1,10 +1,10 @@
 # Reproducing bugs used in the evaluation section of our ESEC/FSE 2020 paper:
 
-Install STORM at version `???`. 
+Install STORM at version `b4961eff9a6392f668fa9aae5a94247735654dfa`. 
  
 ```
 git clone https://github.com/Practical-Formal-Methods/storm
-git checkout ???
+git checkout b4961eff9a6392f668fa9aae5a94247735654dfa
 virtualenv --python=/usr/bin/python3.7 venv
 source venv/bin/activate
 cd storm
