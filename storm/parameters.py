@@ -39,7 +39,21 @@ def get_supported_theories(solver):
                 "smtinterpol" : ["QF_ABV", "QF_ALIA", "QF_AUFBV", "QF_AUFLIA", "QF_AX", "QF_BV", "QF_IDL", "QF_LIA", "QF_LIRA",
                   "QF_LRA", "QF_NIA", "QF_NIRA", "QF_NRA", "QF_RDL", "QF_UF", "QF_UFBV", "QF_UFIDL", "QF_UFLIA",
                   "QF_UFLRA", "QF_UFNIA", "QF_UFNIRA", "QF_UFNRA", "LRA",
-                  "UFLRA"]
+                  "UFLRA"],
+
+                "cvc4": ["ALIA", "AUFNIA", "LRA", "QF_ALIA", "QF_AUFNIA", "QF_LRA", "QF_RDL", "QF_UFIDL",
+                   "QF_UFNRA", "UFDTLIA", "AUFDTLIA", "AUFNIRA", "NIA", "QF_ANIA", "QF_AX", "QF_FP", "QF_NIA",
+                    "QF_UFLIA", "UFLIA", "AUFLIA", "BV", "NRA", "QF_AUFBV", "QF_BV", "QF_IDL", "QF_NIRA",
+                   "QF_UF", "QF_UFLRA", "UF", "UFLRA", "AUFLIRA", "LIA", "QF_ABV", "QF_AUFLIA", "QF_BVFP",
+                   "QF_LIA", "QF_NRA", "QF_UFBV", "QF_UFNIA", "UFDT", "UFNIA", "QF_S"],
+
+                "mathsat" : ["QF_ABV", "QF_ABVFP", "QF_ABVFPLRA", "QF_ALIA", "QF_ANIA", "QF_AUFBV", "QF_AUFLIA",
+                             "QF_AUFNIA", "QF_AX", "QF_BV", "QF_BVFP", "QF_BVFPLRA", "QF_FP", "QF_FPLRA", "QF_IDL",
+                             "QF_LIA", "QF_LIRA", "QF_LRA", "QF_NIA", "QF_NIRA", "QF_NRA", "QF_RDL", "QF_UF", "QF_UFBV",
+                             "QF_UFFP", "QF_UFIDL", "QF_UFLIA", "QF_UFLRA", "QF_UFNIA", "QF_UFNRA"],
+
+                "bitwuzla" : ["BV", "QF_ABV", "QF_ABVFP", "QF_AUFBV", "QF_BV", "QF_BVFP", "QF_FP", "QF_UFBV", "QF_UFFP"]
+
     }
     return theories[solver]
 
